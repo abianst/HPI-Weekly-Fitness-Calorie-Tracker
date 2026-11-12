@@ -1,0 +1,22 @@
+def total_workout_minutes(daily_minutes):
+    """
+    Calculates the total workout minutes for a week.
+
+    Parameters:
+        daily_minutes (list): Workout minutes for each day.
+
+    Returns:
+        int: Total workout minutes for the week.
+    """
+
+    total = 0
+
+    for minutes in daily_minutes:
+        total += minutes
+
+    return total
+
+
+# Example
+week = [30, 20, 45, 0, 25, 40, 35]
+print(total_workout_minutes(week))
